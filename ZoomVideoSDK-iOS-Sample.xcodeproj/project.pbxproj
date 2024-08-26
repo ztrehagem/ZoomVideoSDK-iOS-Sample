@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,23 @@
 		B70BE3DA2C7C5A220018803F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70BE3D92C7C5A220018803F /* ContentView.swift */; };
 		B70BE3DC2C7C5A260018803F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70BE3DB2C7C5A260018803F /* Assets.xcassets */; };
 		B70BE3E02C7C5A260018803F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70BE3DF2C7C5A260018803F /* Preview Assets.xcassets */; };
+		B70BE3E82C7C7D4D0018803F /* ZoomVideoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */; };
+		B70BE3E92C7C7D4E0018803F /* ZoomVideoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B70BE3EA2C7C7D4E0018803F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B70BE3E92C7C7D4E0018803F /* ZoomVideoSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B70BE3D42C7C5A220018803F /* ZoomVideoSDK-iOS-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZoomVideoSDK-iOS-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +36,7 @@
 		B70BE3DB2C7C5A260018803F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B70BE3DD2C7C5A260018803F /* ZoomVideoSDK_iOS_Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomVideoSDK_iOS_Sample.entitlements; sourceTree = "<group>"; };
 		B70BE3DF2C7C5A260018803F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:BJ4HAAB9B3:Zoom Video Communications, Inc."; lastKnownFileType = wrapper.xcframework; name = ZoomVideoSDK.xcframework; path = "lib/zoom-video-sdk-iOS/ZoomVideoSDK.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70BE3E82C7C7D4D0018803F /* ZoomVideoSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 			children = (
 				B70BE3D62C7C5A220018803F /* ZoomVideoSDK-iOS-Sample */,
 				B70BE3D52C7C5A220018803F /* Products */,
+				B70BE3E62C7C7D4D0018803F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +88,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B70BE3E62C7C7D4D0018803F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +106,7 @@
 				B70BE3D02C7C5A220018803F /* Sources */,
 				B70BE3D12C7C5A220018803F /* Frameworks */,
 				B70BE3D22C7C5A220018803F /* Resources */,
+				B70BE3EA2C7C7D4E0018803F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

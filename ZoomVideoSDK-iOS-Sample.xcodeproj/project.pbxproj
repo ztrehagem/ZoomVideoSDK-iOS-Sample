@@ -67,6 +67,7 @@
 		B715871B2C7DD36B002F1189 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		B715871E2C7DD36B002F1189 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
 		B71587202C7DD36B002F1189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B71587282C7DD4AD002F1189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,7 @@
 		B70BE3D62C7C5A220018803F /* ZoomVideoSDK-iOS-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				B71587282C7DD4AD002F1189 /* Info.plist */,
 				B70BE3D72C7C5A220018803F /* ZoomVideoSDK_iOS_SampleApp.swift */,
 				B70BE3D92C7C5A220018803F /* ContentView.swift */,
 				B70BE3DB2C7C5A260018803F /* Assets.xcassets */,
@@ -401,6 +403,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ZoomVideoSDK-iOS-Sample/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = cameraDesciption;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = microphoneDesciption;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -442,6 +445,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ZoomVideoSDK-iOS-Sample/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = cameraDesciption;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = microphoneDesciption;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

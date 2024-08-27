@@ -14,7 +14,20 @@
 		B70BE3E82C7C7D4D0018803F /* ZoomVideoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */; };
 		B70BE3E92C7C7D4E0018803F /* ZoomVideoSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B70BE3ED2C7C82AB0018803F /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70BE3EC2C7C82AB0018803F /* Room.swift */; };
+		B715871C2C7DD36B002F1189 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B715871B2C7DD36B002F1189 /* ReplayKit.framework */; };
+		B715871F2C7DD36B002F1189 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715871E2C7DD36B002F1189 /* SampleHandler.swift */; };
+		B71587232C7DD36B002F1189 /* ScreenShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B715871A2C7DD36B002F1189 /* ScreenShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B71587212C7DD36B002F1189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70BE3CC2C7C5A220018803F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B71587192C7DD36B002F1189;
+			remoteInfo = ScreenShare;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B70BE3EA2C7C7D4E0018803F /* Embed Frameworks */ = {
@@ -28,6 +41,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B71587242C7DD36B002F1189 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B71587232C7DD36B002F1189 /* ScreenShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +63,10 @@
 		B70BE3DF2C7C5A260018803F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:BJ4HAAB9B3:Zoom Video Communications, Inc."; lastKnownFileType = wrapper.xcframework; name = ZoomVideoSDK.xcframework; path = "lib/zoom-video-sdk-iOS/ZoomVideoSDK.xcframework"; sourceTree = "<group>"; };
 		B70BE3EC2C7C82AB0018803F /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		B715871A2C7DD36B002F1189 /* ScreenShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B715871B2C7DD36B002F1189 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		B715871E2C7DD36B002F1189 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		B71587202C7DD36B002F1189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +78,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B71587172C7DD36B002F1189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B715871C2C7DD36B002F1189 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B70BE3D62C7C5A220018803F /* ZoomVideoSDK-iOS-Sample */,
+				B715871D2C7DD36B002F1189 /* ScreenShare */,
 				B70BE3D52C7C5A220018803F /* Products */,
 				B70BE3E62C7C7D4D0018803F /* Frameworks */,
 			);
@@ -66,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B70BE3D42C7C5A220018803F /* ZoomVideoSDK-iOS-Sample.app */,
+				B715871A2C7DD36B002F1189 /* ScreenShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,8 +133,18 @@
 			isa = PBXGroup;
 			children = (
 				B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */,
+				B715871B2C7DD36B002F1189 /* ReplayKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B715871D2C7DD36B002F1189 /* ScreenShare */ = {
+			isa = PBXGroup;
+			children = (
+				B715871E2C7DD36B002F1189 /* SampleHandler.swift */,
+				B71587202C7DD36B002F1189 /* Info.plist */,
+			);
+			path = ScreenShare;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,15 +158,34 @@
 				B70BE3D12C7C5A220018803F /* Frameworks */,
 				B70BE3D22C7C5A220018803F /* Resources */,
 				B70BE3EA2C7C7D4E0018803F /* Embed Frameworks */,
+				B71587242C7DD36B002F1189 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B71587222C7DD36B002F1189 /* PBXTargetDependency */,
 			);
 			name = "ZoomVideoSDK-iOS-Sample";
 			productName = "ZoomVideoSDK-iOS-Sample";
 			productReference = B70BE3D42C7C5A220018803F /* ZoomVideoSDK-iOS-Sample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B71587192C7DD36B002F1189 /* ScreenShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B71587272C7DD36B002F1189 /* Build configuration list for PBXNativeTarget "ScreenShare" */;
+			buildPhases = (
+				B71587162C7DD36B002F1189 /* Sources */,
+				B71587172C7DD36B002F1189 /* Frameworks */,
+				B71587182C7DD36B002F1189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenShare;
+			productName = ScreenShare;
+			productReference = B715871A2C7DD36B002F1189 /* ScreenShare.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -131,6 +198,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					B70BE3D32C7C5A220018803F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B71587192C7DD36B002F1189 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -149,6 +219,7 @@
 			projectRoot = "";
 			targets = (
 				B70BE3D32C7C5A220018803F /* ZoomVideoSDK-iOS-Sample */,
+				B71587192C7DD36B002F1189 /* ScreenShare */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +231,13 @@
 			files = (
 				B70BE3E02C7C5A260018803F /* Preview Assets.xcassets in Resources */,
 				B70BE3DC2C7C5A260018803F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B71587182C7DD36B002F1189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +254,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B71587162C7DD36B002F1189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B715871F2C7DD36B002F1189 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B71587222C7DD36B002F1189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B71587192C7DD36B002F1189 /* ScreenShare */;
+			targetProxy = B71587212C7DD36B002F1189 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B70BE3E12C7C5A260018803F /* Debug */ = {
@@ -296,6 +390,7 @@
 		B70BE3E42C7C5A260018803F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ZoomVideoSDK-iOS-Sample/ZoomVideoSDK_iOS_Sample.entitlements";
@@ -336,6 +431,7 @@
 		B70BE3E52C7C5A260018803F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ZoomVideoSDK-iOS-Sample/ZoomVideoSDK_iOS_Sample.entitlements";
@@ -373,6 +469,63 @@
 			};
 			name = Release;
 		};
+		B71587252C7DD36B002F1189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y45PRF4XB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ztrehagem.ZoomVideoSDK-iOS-Sample.ScreenShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B71587262C7DD36B002F1189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y45PRF4XB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ztrehagem.ZoomVideoSDK-iOS-Sample.ScreenShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -390,6 +543,15 @@
 			buildConfigurations = (
 				B70BE3E42C7C5A260018803F /* Debug */,
 				B70BE3E52C7C5A260018803F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B71587272C7DD36B002F1189 /* Build configuration list for PBXNativeTarget "ScreenShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B71587252C7DD36B002F1189 /* Debug */,
+				B71587262C7DD36B002F1189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

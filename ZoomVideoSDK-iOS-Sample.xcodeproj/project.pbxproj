@@ -18,7 +18,6 @@
 		B715871F2C7DD36B002F1189 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715871E2C7DD36B002F1189 /* SampleHandler.swift */; };
 		B71587232C7DD36B002F1189 /* ScreenShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B715871A2C7DD36B002F1189 /* ScreenShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B72347AD2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347AC2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework */; };
-		B72347AE2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B72347AC2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B72347B32C7EEB86005AA726 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347B02C7EEB86005AA726 /* CoreGraphics.framework */; };
 		B72347B42C7EEB86005AA726 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347B12C7EEB86005AA726 /* CoreVideo.framework */; };
 		B72347B52C7EEB86005AA726 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347B22C7EEB86005AA726 /* CoreMedia.framework */; };
@@ -56,17 +55,6 @@
 				B71587232C7DD36B002F1189 /* ScreenShare.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B72347AF2C7EEB69005AA726 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B72347AE2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -215,7 +203,6 @@
 				B71587162C7DD36B002F1189 /* Sources */,
 				B71587172C7DD36B002F1189 /* Frameworks */,
 				B71587182C7DD36B002F1189 /* Resources */,
-				B72347AF2C7EEB69005AA726 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

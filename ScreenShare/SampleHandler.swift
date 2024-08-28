@@ -15,7 +15,7 @@ class SampleHandler: RPBroadcastSampleHandler, ZoomVideoSDKScreenShareServiceDel
         // Create an instance of ZoomVideoSDKScreenShareService to handle broadcast actions.
         let params = ZoomVideoSDKScreenShareServiceInitParams()
         // Provide your app group ID from your Apple Developer account.
-        params.appGroupId = "your app group ID here"
+        params.appGroupId = "group.dev.ztrehagem.ZoomVideoSDK-iOS-Sample"
         // Set this to true to enable sharing device audio during screenshare
         params.isWithDeviceAudio = true
         let service = ZoomVideoSDKScreenShareService(params: params)

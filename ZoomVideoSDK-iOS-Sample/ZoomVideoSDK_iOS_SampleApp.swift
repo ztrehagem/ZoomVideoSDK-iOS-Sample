@@ -27,6 +27,7 @@ private func initZoomVideoSDK() {
     let initParams = ZoomVideoSDKInitParams()
     initParams.domain = "zoom.us"
     initParams.enableLog = true
+    initParams.appGroupId = "group.dev.ztrehagem.ZoomVideoSDK-iOS-Sample"
     
     let sdkInitReturnStatus = ZoomVideoSDK.shareInstance()?.initialize(initParams)
     switch sdkInitReturnStatus {

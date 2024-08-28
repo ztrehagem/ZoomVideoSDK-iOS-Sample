@@ -17,6 +17,12 @@
 		B715871C2C7DD36B002F1189 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B715871B2C7DD36B002F1189 /* ReplayKit.framework */; };
 		B715871F2C7DD36B002F1189 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715871E2C7DD36B002F1189 /* SampleHandler.swift */; };
 		B71587232C7DD36B002F1189 /* ScreenShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B715871A2C7DD36B002F1189 /* ScreenShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B72347AD2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347AC2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework */; };
+		B72347AE2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B72347AC2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B72347B32C7EEB86005AA726 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347B02C7EEB86005AA726 /* CoreGraphics.framework */; };
+		B72347B42C7EEB86005AA726 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347B12C7EEB86005AA726 /* CoreVideo.framework */; };
+		B72347B52C7EEB86005AA726 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347B22C7EEB86005AA726 /* CoreMedia.framework */; };
+		B72347B72C7EEB8D005AA726 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72347B62C7EEB8D005AA726 /* VideoToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,17 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B72347AF2C7EEB69005AA726 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B72347AE2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +85,11 @@
 		B715871E2C7DD36B002F1189 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
 		B71587202C7DD36B002F1189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71587282C7DD4AD002F1189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B72347AC2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:BJ4HAAB9B3:Zoom Video Communications, Inc."; lastKnownFileType = wrapper.xcframework; name = ZoomVideoSDKScreenShare.xcframework; path = "lib/zoom-video-sdk-iOS/ZoomVideoSDKScreenShare.xcframework"; sourceTree = "<group>"; };
+		B72347B02C7EEB86005AA726 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B72347B12C7EEB86005AA726 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		B72347B22C7EEB86005AA726 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		B72347B62C7EEB8D005AA726 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +105,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72347B32C7EEB86005AA726 /* CoreGraphics.framework in Frameworks */,
 				B715871C2C7DD36B002F1189 /* ReplayKit.framework in Frameworks */,
+				B72347B72C7EEB8D005AA726 /* VideoToolbox.framework in Frameworks */,
+				B72347AD2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework in Frameworks */,
+				B72347B42C7EEB86005AA726 /* CoreVideo.framework in Frameworks */,
+				B72347B52C7EEB86005AA726 /* CoreMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +161,11 @@
 		B70BE3E62C7C7D4D0018803F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B72347B62C7EEB8D005AA726 /* VideoToolbox.framework */,
+				B72347B02C7EEB86005AA726 /* CoreGraphics.framework */,
+				B72347B22C7EEB86005AA726 /* CoreMedia.framework */,
+				B72347B12C7EEB86005AA726 /* CoreVideo.framework */,
+				B72347AC2C7EEB69005AA726 /* ZoomVideoSDKScreenShare.xcframework */,
 				B70BE3E72C7C7D4D0018803F /* ZoomVideoSDK.xcframework */,
 				B715871B2C7DD36B002F1189 /* ReplayKit.framework */,
 			);
@@ -179,6 +211,7 @@
 				B71587162C7DD36B002F1189 /* Sources */,
 				B71587172C7DD36B002F1189 /* Frameworks */,
 				B71587182C7DD36B002F1189 /* Resources */,
+				B72347AF2C7EEB69005AA726 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

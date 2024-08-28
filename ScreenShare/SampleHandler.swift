@@ -11,6 +11,7 @@ class SampleHandler: RPBroadcastSampleHandler, ZoomVideoSDKScreenShareServiceDel
     var screenShareService: ZoomVideoSDKScreenShareService?
     
     override init() {
+        print("SampleHandler init")
         super.init()
         // Create an instance of ZoomVideoSDKScreenShareService to handle broadcast actions.
         let params = ZoomVideoSDKScreenShareServiceInitParams()
@@ -25,6 +26,7 @@ class SampleHandler: RPBroadcastSampleHandler, ZoomVideoSDKScreenShareServiceDel
     
     override func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?) {
         // User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.
+        print("SampleHandler broadcastStarted")
         guard let setupInfo = setupInfo else { return }
         // Pass setup info to SDK.
         screenShareService?.broadcastStarted(withSetupInfo: setupInfo)
@@ -32,18 +34,21 @@ class SampleHandler: RPBroadcastSampleHandler, ZoomVideoSDKScreenShareServiceDel
     
     override func broadcastPaused() {
         // User has requested to pause the broadcast. Samples will stop being delivered.
+        print("SampleHandler broadcastPaused")
         // Notify SDK the broadcast was paused.
         screenShareService?.broadcastPaused()
     }
     
     override func broadcastResumed() {
         // User has requested to resume the broadcast. Samples delivery will resume.
+        print("SampleHandler broadcastResumed")
         // Notify SDK the broadcast was resumed.
         screenShareService?.broadcastResumed()
     }
     
     override func broadcastFinished() {
         // User has requested to finish the broadcast.
+        print("SampleHandler broadcastFinished")
         // Notify SDK the broadcast has finished.
         screenShareService?.broadcastFinished()
     }
@@ -54,6 +59,7 @@ class SampleHandler: RPBroadcastSampleHandler, ZoomVideoSDKScreenShareServiceDel
     }
     
     func zoomVideoSDKScreenShareServiceFinishBroadcastWithError(_ error: Error?) {
+        print("SampleHandler zoomVideoSDKScreenShareServiceFinishBroadcastWithError")
         guard let error = error else { return }
         // Terminate broadcast when notified of error from SDK.
         finishBroadcastWithError(error)

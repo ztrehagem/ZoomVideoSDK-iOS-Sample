@@ -96,4 +96,8 @@ extension Room: ZoomVideoSDKDelegate {
             })
         }
     }
+    
+    func onUserShareStatusChanged(_ helper: ZoomVideoSDKShareHelper?, user: ZoomVideoSDKUser?, status: ZoomVideoSDKReceiveSharingStatus) {
+        print("ZoomVideoSDKDelegate.onUserShareStatusChanged \(status)")
+    }
 }

@@ -71,6 +71,7 @@ extension Room: ZoomVideoSDKDelegate {
         if let mySelf = ZoomVideoSDK.shareInstance()?.getSession()?.getMySelf() {
             users.append(mySelf)
         }
+        print(ZoomVideoSDK.shareInstance()?.getShareHelper()?.isShareLocked())
     }
     
     func onSessionLeave(_ reason: ZoomVideoSDKSessionLeaveReason) {
